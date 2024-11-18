@@ -11,9 +11,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    permissions:
+    # Required to allow actions/checkout to clone the repository onto the runner
+      contents: read
+      # Required to allow the vitest coverage action to write a comment into the pull request
+      pull-requests: write
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
