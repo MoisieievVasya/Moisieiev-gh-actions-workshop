@@ -11,7 +11,7 @@ const Global = createGlobalStyle`
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
-
+// xexe
 root.render(
   <React.StrictMode>
     <Global />
