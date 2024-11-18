@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    name: "Build and Test"
     runs-on: ubuntu-latest
     permissions:
     # Required to allow actions/checkout to clone the repository onto the runner
@@ -34,4 +35,6 @@ jobs:
     - run: npm test 
     - name: Vitest Coverage Report
       uses: davelosert/vitest-coverage-report-action@v2.8.0
+      with:
+        vite-config-path: vite.config.ts
             
