@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-
+/terraform/.terraform/*
 # Editor directories and files
 # .vscode/*
 .idea
@@ -23,3 +23,4 @@ dist-ssr
 *.sw?
 
 coverage
+/terrafrom/.terraform
