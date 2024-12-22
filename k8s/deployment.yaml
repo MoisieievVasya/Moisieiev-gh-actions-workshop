@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: rocketdex
-        image: ghcr.io/slash4r/devops-gh-actions-workshop:581ebe5
+        image: ghcr.io/moisieievvasya/moisieiev-gh-actions-workshop:ed6dc84
         ports:
         - containerPort: 8080
